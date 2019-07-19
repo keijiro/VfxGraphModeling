@@ -120,6 +120,138 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &24907347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 24907348}
+  - component: {fileID: 24907350}
+  - component: {fileID: 24907349}
+  m_Layer: 0
+  m_Name: Blocks 2c
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &24907348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24907347}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 423789611}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!73398921 &24907349
+VFXRenderer:
+  m_ObjectHideFlags: 2
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24907347}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 0
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 0}
+  - {fileID: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!2083052967 &24907350
+VisualEffect:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 24907347}
+  m_Enabled: 1
+  m_Asset: {fileID: 8926484042661614526, guid: f203caf4ff8c8387e824c92636f06c2c, type: 3}
+  m_StartSeed: 132322572
+  m_ResetSeedOnPlay: 0
+  m_PropertySheet:
+    m_Float:
+      m_Array:
+      - m_Value: 0.5
+        m_Name: Height
+        m_Overridden: 1
+      - m_Value: 1.4
+        m_Name: Base Width
+        m_Overridden: 1
+      - m_Value: 0.3
+        m_Name: Base Height
+        m_Overridden: 1
+      - m_Value: 0.3
+        m_Name: Height Randomness
+        m_Overridden: 1
+      - m_Value: 0.62
+        m_Name: Width Randomness
+        m_Overridden: 1
+      - m_Value: 0.2
+        m_Name: Width Aspect
+        m_Overridden: 1
+      - m_Value: 45
+        m_Name: Angle
+        m_Overridden: 1
+    m_Vector2f:
+      m_Array: []
+    m_Vector3f:
+      m_Array: []
+    m_Vector4f:
+      m_Array: []
+    m_Uint:
+      m_Array:
+      - m_Value: 1000
+        m_Name: Block Count
+        m_Overridden: 1
+      - m_Value: 2
+        m_Name: Detail Level
+        m_Overridden: 1
+    m_Int:
+      m_Array: []
+    m_Matrix4x4f:
+      m_Array: []
+    m_AnimationCurve:
+      m_Array: []
+    m_Gradient:
+      m_Array: []
+    m_NamedObject:
+      m_Array: []
+    m_Bool:
+      m_Array: []
 --- !u!1 &212252407
 GameObject:
   m_ObjectHideFlags: 0
@@ -399,9 +531,9 @@ Transform:
   m_Children:
   - {fileID: 1464093536}
   - {fileID: 971650202}
-  - {fileID: 1226783715}
   - {fileID: 1157069009}
-  - {fileID: 942835599}
+  - {fileID: 1226783715}
+  - {fileID: 24907348}
   - {fileID: 1522173746}
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -864,14 +996,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55d31f1de209675e79f10d1c64da0cbc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _edgeColor: {r: 0.3584906, g: 0, b: 0.042050444, a: 1}
+  _edgeColor: {r: 0.4811321, g: 0, b: 0, a: 1}
   _edgeSource: 2
   _edgeThreshold: 0.178
   _edgeContrast: 0.327
   _fillGradient:
     serializedVersion: 2
     key0: {r: 0, g: 0, b: 0, a: 1}
-    key1: {r: 0.71300006, g: 0.014972978, b: 0.014972978, a: 1}
+    key1: {r: 0.015686274, g: 0.41569185, b: 0.7137255, a: 1}
     key2: {r: 1, g: 1, b: 1, a: 0}
     key3: {r: 1, g: 1, b: 1, a: 0}
     key4: {r: 1, g: 1, b: 1, a: 0}
@@ -900,137 +1032,6 @@ MonoBehaviour:
   _fillOpacity: 1
   _backgroundColor: {r: 0.8584906, g: 0, b: 0, a: 1}
   _targetTexture: {fileID: 8400000, guid: 28b2e2e920e9b74a08558a97d1758d9f, type: 2}
---- !u!1 &942835598
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 942835599}
-  - component: {fileID: 942835601}
-  - component: {fileID: 942835600}
-  m_Layer: 0
-  m_Name: Blocks 2b
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &942835599
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 942835598}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 423789611}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!73398921 &942835600
-VFXRenderer:
-  m_ObjectHideFlags: 2
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 942835598}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 0
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!2083052967 &942835601
-VisualEffect:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 942835598}
-  m_Enabled: 1
-  m_Asset: {fileID: 8926484042661614526, guid: f203caf4ff8c8387e824c92636f06c2c, type: 3}
-  m_StartSeed: 1680724207
-  m_ResetSeedOnPlay: 0
-  m_PropertySheet:
-    m_Float:
-      m_Array:
-      - m_Value: 0.5
-        m_Name: Height
-        m_Overridden: 1
-      - m_Value: 0.81
-        m_Name: Base Width
-        m_Overridden: 1
-      - m_Value: 0.6
-        m_Name: Base Height
-        m_Overridden: 1
-      - m_Value: 0
-        m_Name: Height Randomness
-        m_Overridden: 1
-      - m_Value: 0.62
-        m_Name: Width Randomness
-        m_Overridden: 1
-      - m_Value: 0.15
-        m_Name: Width Aspect
-        m_Overridden: 1
-      - m_Value: 45
-        m_Name: Angle
-        m_Overridden: 1
-    m_Vector2f:
-      m_Array: []
-    m_Vector3f:
-      m_Array: []
-    m_Vector4f:
-      m_Array: []
-    m_Uint:
-      m_Array:
-      - m_Value: 3000
-        m_Name: Block Count
-        m_Overridden: 1
-    m_Int:
-      m_Array: []
-    m_Matrix4x4f:
-      m_Array: []
-    m_AnimationCurve:
-      m_Array: []
-    m_Gradient:
-      m_Array: []
-    m_NamedObject:
-      m_Array: []
-    m_Bool:
-      m_Array: []
 --- !u!1 &971650201
 GameObject:
   m_ObjectHideFlags: 0
@@ -1082,8 +1083,6 @@ VFXRenderer:
   m_Materials:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1121,24 +1120,24 @@ VisualEffect:
       - m_Value: 0.5
         m_Name: Height
         m_Overridden: 1
-      - m_Value: 0.85
+      - m_Value: 0.8
         m_Name: Base Width
         m_Overridden: 1
-      - m_Value: 0.5
+      - m_Value: 0.8
         m_Name: Base Height
         m_Overridden: 1
-      - m_Value: 0
+      - m_Value: 0.42
         m_Name: Height Randomness
-        m_Overridden: 1
-      - m_Value: 0.62
+        m_Overridden: 0
+      - m_Value: 1
         m_Name: Width Randomness
-        m_Overridden: 1
-      - m_Value: 0.1
+        m_Overridden: 0
+      - m_Value: -0.22
         m_Name: Width Aspect
         m_Overridden: 0
       - m_Value: 0
         m_Name: Angle
-        m_Overridden: 1
+        m_Overridden: 0
     m_Vector2f:
       m_Array: []
     m_Vector3f:
@@ -1147,8 +1146,11 @@ VisualEffect:
       m_Array: []
     m_Uint:
       m_Array:
-      - m_Value: 3000
+      - m_Value: 4000
         m_Name: Block Count
+        m_Overridden: 1
+      - m_Value: 10
+        m_Name: Detail Level
         m_Overridden: 1
     m_Int:
       m_Array: []
@@ -1192,7 +1194,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 423789611}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!73398921 &1157069010
 VFXRenderer:
@@ -1211,8 +1213,6 @@ VFXRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   m_StaticBatchInfo:
@@ -1252,16 +1252,16 @@ VisualEffect:
       - m_Value: 0.5
         m_Name: Height
         m_Overridden: 1
-      - m_Value: 0.81
+      - m_Value: 1
         m_Name: Base Width
         m_Overridden: 1
-      - m_Value: 0.6
+      - m_Value: 0.3
         m_Name: Base Height
         m_Overridden: 1
-      - m_Value: 0
+      - m_Value: 0.3
         m_Name: Height Randomness
         m_Overridden: 1
-      - m_Value: 0.62
+      - m_Value: 0.6
         m_Name: Width Randomness
         m_Overridden: 1
       - m_Value: 0.1
@@ -1280,6 +1280,9 @@ VisualEffect:
       m_Array:
       - m_Value: 3000
         m_Name: Block Count
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: Detail Level
         m_Overridden: 1
     m_Int:
       m_Array: []
@@ -1305,7 +1308,7 @@ GameObject:
   - component: {fileID: 1226783717}
   - component: {fileID: 1226783716}
   m_Layer: 0
-  m_Name: Blocks 1b
+  m_Name: Blocks 2b
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1323,7 +1326,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 423789611}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!73398921 &1226783716
 VFXRenderer:
@@ -1342,8 +1345,6 @@ VFXRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   m_StaticBatchInfo:
@@ -1383,22 +1384,22 @@ VisualEffect:
       - m_Value: 0.5
         m_Name: Height
         m_Overridden: 1
-      - m_Value: 0.85
+      - m_Value: 1.4
         m_Name: Base Width
         m_Overridden: 1
-      - m_Value: 0.5
+      - m_Value: 0.3
         m_Name: Base Height
         m_Overridden: 1
-      - m_Value: 0
+      - m_Value: 0.3
         m_Name: Height Randomness
         m_Overridden: 1
       - m_Value: 0.62
         m_Name: Width Randomness
         m_Overridden: 1
-      - m_Value: 0.1
+      - m_Value: 0.2
         m_Name: Width Aspect
-        m_Overridden: 0
-      - m_Value: 45
+        m_Overridden: 1
+      - m_Value: -45
         m_Name: Angle
         m_Overridden: 1
     m_Vector2f:
@@ -1409,8 +1410,11 @@ VisualEffect:
       m_Array: []
     m_Uint:
       m_Array:
-      - m_Value: 3000
+      - m_Value: 1000
         m_Name: Block Count
+        m_Overridden: 1
+      - m_Value: 1
+        m_Name: Detail Level
         m_Overridden: 1
     m_Int:
       m_Array: []
@@ -1601,8 +1605,6 @@ VFXRenderer:
   m_Materials:
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1643,7 +1645,7 @@ VisualEffect:
       - m_Value: 0.25
         m_Name: Base Width
         m_Overridden: 1
-      - m_Value: 2
+      - m_Value: 2.3
         m_Name: Base Height
         m_Overridden: 1
       - m_Value: 0.2
@@ -1668,6 +1670,9 @@ VisualEffect:
       m_Array:
       - m_Value: 2000
         m_Name: Block Count
+        m_Overridden: 1
+      - m_Value: 3
+        m_Name: Detail Level
         m_Overridden: 1
     m_Int:
       m_Array: []
