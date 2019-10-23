@@ -1,7 +1,17 @@
 {
+  "scopedRegistries": [
+    {
+      "name": "Keijiro",
+      "url": "https://registry.npmjs.com",
+      "scopes": [
+        "jp.keijiro"
+      ]
+    }
+  ],
   "dependencies": {
-    "com.unity.render-pipelines.high-definition": "6.9.0-preview",
-    "jp.keijiro.klak.ndi": "https://github.com/keijiro/KlakNDI.git#upm",
+    "com.unity.render-pipelines.high-definition": "7.1.2",
+    "jp.keijiro.kino.post-processing": "2.0.1",
+    "jp.keijiro.klak.ndi": "0.2.3",
     "com.unity.modules.animation": "1.0.0",
     "com.unity.modules.imageconversion": "1.0.0",
     "com.unity.modules.imgui": "1.0.0",
@@ -9,11 +19,5 @@
     "com.unity.modules.physics2d": "1.0.0",
     "com.unity.modules.ui": "1.0.0",
     "com.unity.modules.vr": "1.0.0"
-  },
-  "lock": {
-    "jp.keijiro.klak.ndi": {
-      "hash": "2489b981f9c740977e1db7d9601e6b52b472ba03",
-      "revision": "upm"
-    }
   }
 }

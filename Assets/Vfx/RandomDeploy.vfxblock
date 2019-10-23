@@ -54,6 +54,7 @@ VisualEffectResource:
     m_UpdateMode: 0
     m_PreWarmDeltaTime: 0.05
     m_PreWarmStepCount: 0
+    m_InitialEventName: OnPlay
   m_Systems: []
 --- !u!114 &2
 MonoBehaviour:
@@ -154,7 +155,7 @@ MonoBehaviour:
     min: 0
     max: 1
     descendantCount: 0
-  m_GraphVersion: 2
+  m_GraphVersion: 3
   m_saved: 1
   m_SubgraphDependencies: []
   m_CategoryPath: 
@@ -282,9 +283,9 @@ MonoBehaviour:
   uiBounds:
     serializedVersion: 2
     x: -796
-    y: -1124
+    y: -1120
     width: 2554
-    height: 1517
+    height: 1519
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -332,7 +333,10 @@ MonoBehaviour:
   title: 
   m_Owners:
   - {fileID: 4}
-  m_Capacity: 65536
+  dataType: 0
+  capacity: 65536
+  stripCapacity: 16
+  particlePerStripCount: 16
   m_Space: 0
 --- !u!114 &6
 MonoBehaviour:
