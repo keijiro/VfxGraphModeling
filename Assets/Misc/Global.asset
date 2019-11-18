@@ -16,7 +16,7 @@ MonoBehaviour:
   m_AdvancedMode: 0
   edgeColor:
     m_OverrideState: 1
-    m_Value: {r: 0, g: 0, b: 0, a: 0.53333336}
+    m_Value: {r: 0, g: 0, b: 0, a: 0.5529412}
     hdr: 0
     showAlpha: 1
     showEyeDropper: 1
@@ -45,8 +45,8 @@ MonoBehaviour:
       key5: {r: 0, g: 0, b: 0, a: 0}
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
-      ctime0: 27521
-      ctime1: 47587
+      ctime0: 17028
+      ctime1: 37830
       ctime2: 65535
       ctime3: 0
       ctime4: 0
@@ -67,6 +67,14 @@ MonoBehaviour:
   fillOpacity:
     m_OverrideState: 1
     m_Value: 1
+    min: 0
+    max: 1
+  ditherType:
+    m_OverrideState: 1
+    m_Value: 0
+  ditherStrength:
+    m_OverrideState: 1
+    m_Value: 0.05
     min: 0
     max: 1
 --- !u!114 &11400000
